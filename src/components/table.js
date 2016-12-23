@@ -1,10 +1,15 @@
 import Inferno from 'inferno';
 
 const Table = (props) => {
-    console.log(props.data);
+    const row = () => {
+        return props.station.map(elm => {
+            return <div>{elm.name}</div>
+        });
+    };
+
     return (
         <div>
-            test
+            {row()}
         </div>
     );
 };

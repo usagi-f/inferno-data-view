@@ -11,7 +11,7 @@ class ViewContainer extends Component {
         return (
             <div>
                 <Heading label="Inferno Data View" />
-                <Table data={data} />
+                <Table station={data.station} />
             </div>
         )
     }
